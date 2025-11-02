@@ -24,9 +24,11 @@
             git
           ];
 
+          RUBYOPT = "-W0";
+
           shellHook = ''
             # Activate the Ruby environment (Bundler-installed gems)
-            export PATH="$GEM_HOME/bin:$PATH"
+            export PATH="$PWD/vendor/bundle/ruby/3.4.0/bin:$PATH"
 
             echo "🔧 Ruby + Node.js development shell"
             echo "Ruby version: $(ruby -v)"
