@@ -19,7 +19,9 @@
 
           # Native dependencies for building gems and node modules
           buildInputs = with pkgs; [
+            opencode
             ruby
+            nodejs
             pnpm
             git
           ];

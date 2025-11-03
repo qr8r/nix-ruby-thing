@@ -4,5 +4,10 @@ ruby "3.4.7"
 
 gem "puma"
 gem "rack"
-gem "rackup"
 gem "rake"
+
+group(:development) do
+  gem "rackup"
+  gem "guard"
+  gem "guard-process"
+end
